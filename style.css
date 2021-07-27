@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;
+}
+
+::selection {
+    background-color: #ededed;
+    color: #000;
+}
+
+body {
+    background-color: #e7e7e8;
+}
+
+*  
+
+/* nav styles */
+nav {
+    background-color: #231f20;
+    height: 123px;
+    padding-top:50px;
+    margin:auto;
+    display: flex;
+    justify-content:center;
+}
+
+.hdng > a {
+    
+    font-weight: 700;
+    text-decoration: none;
+    color: #ededed;
+}
+
+.desc {
+    text-transform:uppercase;
+    letter-spacing:0.32em;
+    font-size:7px;
+    color: #ededed;
+    padding-left:20px;
+    font-weight: 700;
+    padding-top:3px;
+}
+
+.portf {
+    padding-top:3px;
+    margin-left:25%;
+    margin-bottom:55px;
+    display: inline-block;
+    position: relative;
+}
+
+/* portfolio link anim */
+  
+  .portf:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ededed;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .portf:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/*end of portfolio link anim */
+
+h1 {
+    text-transform:uppercase;
+    letter-spacing:0.42em;
+    font-size:12px;
+    color: #ededed;
+}
+
+nav>a {
+    text-transform:uppercase;
+    letter-spacing:0.42em;
+    font-size:7px;
+    font-weight: 700;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.ads {
+    background-color: #d2bba9;
+    width: 970px;
+    max-width: 970px;
+    height: 90px;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7px;
+    letter-spacing: 0.32em;
+    font-weight: 700;
+    color: #ededed;
+}
+
+.cont {
+    margin: 0 auto;
+    width:970px;
+    margin-bottom:50px;
+}
+
+.portitems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-auto-flow: row;
+    }
+
+.portbox {
+    background-color: #c4c4c4;
+    padding: 0;
+    height: 165px;
+    opacity:0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+.portbox:hover {
+    opacity: 1;
+}
+
+.itemdesc{
+    font-size:8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+}
+
+a > span[class="itemdesc"] {
+    text-decoration: none;
+}
+
+.itemdesc:hover {
+    opacity: 0.5;
+}
+
+
+.btn {
+    margin:0 auto;
+    width:970px;
+}
+
+button.git {
+    background-color: #6e5495;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 7px;
+    font-weight: 700;
+    box-shadow: none;
+    padding: 30px;
+    width:49%;
+    color: #ededed;
+    border:0;
+
+}
+
+button.shop {
+    background-color: #d2bba9;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 7px;
+    font-weight: 700;
+    box-shadow: none;
+    padding: 30px;
+    width:49%;
+    float: right;
+    color: #ededed;
+    border: 0;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(0.96);
+}
+.spacer {
+    clear: both;
+    margin:50px 0;
+}
+
+div#frm {
+    margin:0 auto;
+    border: 1px solid #000;
+    width:970px;
+    padding:20px;
+    margin-bottom:50px;
+}
+
+input[type="email"] {
+    background-color: rgba(0,0,0,0);
+    border:0;
+    outline:0;
+}
+
+input[placeholder] {
+    font-size: 7px;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 0.32em;
+}
+
+
+input[type="submit"] {
+    text-transform: uppercase;
+    font-size: 7px;
+    font-weight: 700;
+    color:#000;
+    letter-spacing: 0.32em;
+    background-color: transparent;
+    border:0;
+    text-align: center;
+}
+
+form {
+    display:flex;
+    justify-content: center;
+    padding:10px 0;
+}
+
+footer {
+    background-color: #231f20;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    text-transform: uppercase;
+    font-size: 7px;
+    letter-spacing: 0.32em;
+    text-align: center;
+    color: #ededed;
+    margin-left: 200px;
+}
+
+.socials {
+    margin-right: 200px;
+}
+
+.fa {
+    color:#ededed;
+    margin:0 5px;
+    font-size:12px;
+}
+
