@@ -1,4 +1,4 @@
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
 
 html,body {
     overflow-x: hidden;
@@ -16,12 +16,12 @@ nav {
 }
 
 .ads {
-   width: 100%;
-   max-width: 100vw;
+   width: auto;
+   max-width: 100%;
    height:45px;
    margin-top:50px;
    margin-left:20px;
-   padding-right:40px;
+   padding-right:20px;
    background-color: transparent;
     
 }
@@ -37,23 +37,23 @@ nav {
 
 .portbox img {
     width:100%;
+}
+
+.portbox {
     height:auto;
+    background-color:transparent
 }
 
 .portitems {
     grid-template-columns: 1fr;
     margin: 0 20px;
 }
-
-.itemdesc {
-    
-    
-}
+  
 
 .btn{
     display: block;
     width: 100%;
-    margin-top:140px;
+    margin-top:50px;
     padding: 0 20px;
 }
 
@@ -76,11 +76,9 @@ form {
 }
 
 div#frm {
-    width:90vw;
-
+    width:auto;
     margin-left:20px;
-    padding-right:50px;
-    
+    margin-right:20px;
 }
 
 input[placeholder] {
