@@ -126,6 +126,12 @@ nav>a {
     transition: all 0.5s ease-in-out;
 }
 
+.portbox img {
+    width: 310px;
+    height: 165px;
+    object-fit: cover;
+}
+
 .portbox:hover {
     opacity: 1;
 }
