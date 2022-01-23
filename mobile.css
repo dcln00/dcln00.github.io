@@ -9,7 +9,11 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top:0;
-}   
+} 
+
+nav .desc {
+    margin-top:20px;
+}
 
 .portf {
     margin:5px 0;
@@ -98,6 +102,8 @@ footer {
 
 .copyright {
     margin:10px 0;
+    padding: 0 20px;
+    line-height: 2;
 }
 
 .socials {
