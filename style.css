@@ -265,3 +265,21 @@ footer {
     font-size:12px;
 }
 
+#error404 {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #231f20;
+}
+
+#error404 h2 {
+    font-size: 100px;
+    color: #ededed;
+}
+
+#error404 p {
+    text-align: center;
+    font-size:10px;
+    color:#ededed;
+}
