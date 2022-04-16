@@ -23,13 +23,6 @@
     <meta name="twitter:image" content="https://raw.githubusercontent.com/dcln00/dcln00.github.io/main/thumbs/projects.niiaryeh.me.png" />
     <meta name="twitter:image:alt" content="A web developers portfolio." />
     <!--end-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
-    <!--SMB-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="mobile.css" type="text/css">
@@ -44,29 +37,17 @@
             <a href="https://www.niiaryeh.me" target="_blank" class="portf">niiaryeh.me</a>
     </nav>
     <main>
-        <!--22 Ayvas banner goes here-->
         <section>
             <div class="ads"><a href="https://www.22ayvas.studio" target="_blank"><img src="22ayvasad-01.jpg" alt="" width="970" height="90" draggable="false"></a>
             </div>
         </section>
-        <!--Portfolio item links-->
         <div class="cont">
         <section class="portitems">
-            <div class="portbox"><a href="https://themeaduane.vercel.app/" style="text-decoration: none;color: #231f20;" target="_blank"><img src="thumbs/thumbnail-06.png" alt=""><br><span class="itemdesc">01/ theme aduane</span> </a></div>
-
-            <div class="portbox"><a href="https://projects.niiaryeh.me/persona-website/" target="_blank" style="text-decoration: none;color: #231f20;"><img src="thumbs/thumbnails-05.png" alt=""><br><span class="itemdesc">02/ getpersona.app online store</span> </a></div>
-
-            <div class="portbox"><a href="https://projects.niiaryeh.me/tripzzafrica/" target="_blank" style="text-decoration: none;color: #231f20;"><img src="thumbs/thumbnails-04.png" alt=""><br><span class="itemdesc">03/ tripzzafrica</span> </a></div>
-
-            <div class="portbox"><a href="https://projects.niiaryeh.me/wavebox-realty-project/" target="_blank" style="text-decoration: none;color: #231f20;"><img src="thumbs/thumbnails-03.png" alt=""><br><span class="itemdesc">04/ Wavebox Properties Landing Page</span> </a></div>
-
-            <div class="portbox"><a href="https://projects.niiaryeh.me/Monochrome-Profile-Web/" target="_blank" style="text-decoration: none;color: #231f20;"><img src="thumbs/thumbnails-02.png" alt=""><br><span class="itemdesc">05/ Monochrome Profile Website</span> </a></div>
-
-            <div class="portbox"><a href="https://projects.niiaryeh.me/22-ayvs-contact-form-demo/" target="_blank" style="text-decoration: none;color: #231f20;"><img src="thumbs/thumbnails-01.jpg" alt=""><br><span class="itemdesc">06/ Contact form built with Flexbox</span> </a></div>
-
+            <div class="portbox" v-for="project in projects">
+                <span :class="project.frameworkColor">{{ project.framework }}</span>
+                <a :href="project.url" style="text-decoration: none;color: #231f20;" target="_blank"><img :src="project.img" alt=""><br><span class="itemdesc"> {{project.title}} </span> </a></div>
         </section>
         </div>
-        <!--Social media links-->
         <section class="btn">
             <button class="git" onclick="window.location.href='https://github.com/dcln00';" target="_blank">Github</button>
             <a href="https://www.niiaryeh.me/" target="_blank"><button class="shop">niiaryeh.me</button></a>
@@ -83,7 +64,6 @@
         </div>
     </main>
     <footer>
-        <!--instagram, twitter, github, behance-->
         <div class="socials">
             <a href="https://twitter.com/fkadcln" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://www.instagram.com/n.aryeh" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -92,5 +72,8 @@
         </div>
         <span class="copyright">© Copyright 2022 projects.niiaryeh.me/niiaryeh.me all rights reserved</span>
     </footer>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="vue.js"></script>
 </body>
 </html>
