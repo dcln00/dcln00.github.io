@@ -22,7 +22,7 @@ const app = Vue.createApp({
                 },
                 {framework: 'Bootstrap',
                 frameworkColor: 'new-btn bootstrap',
-                url: 'https://projects.niiaryeh.me/61x3s/',
+                url: 'https://projects.niiaryeh.me/61x3s',
                 img: 'thumbs/thumbnails-07.png',
                 title: '04/ Theme 61x3s'
                 },
