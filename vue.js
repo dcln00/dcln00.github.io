@@ -8,17 +8,17 @@ const app = Vue.createApp({
                 img: 'thumbs/thumbnail-08.jpg',
                 title: '01/ Styled By Selly ecommerce store (coming soon)'
                 },
+				{framework: 'Nuxt JS',
+                frameworkColor: 'new-btn nuxt',
+                url: 'https://eisenlegal.vercel.app/',
+                img: 'thumbs/thumbnail-09.jpg',
+                title: '02/ eisenlegal'
+                },
                 {framework: 'Vue JS',
                 frameworkColor: 'new-btn vue',
                 url: 'https://themeaduane.vercel.app/',
                 img: 'thumbs/thumbnail-06.png',
-                title: '02/ theme aduane'
-                },
-                {framework: 'Bootstrap',
-                frameworkColor: 'new-btn bootstrap',
-                url: 'https://projects.niiaryeh.me/persona-website/',
-                img: 'thumbs/thumbnails-05.png',
-                title: '03/ getpersona.app online store'
+                title: '03/ theme aduane'
                 },
                 {framework: 'Bootstrap',
                 frameworkColor: 'new-btn bootstrap',
