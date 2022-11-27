@@ -14,12 +14,102 @@
 }
 
 body {
-    background-color: #e7e7e8;
-}  
+    background-color: var(--background-color);
+}
+
+/* colors */
+
+:root {
+	--filter: grayscale(0%);
+	--background-color: #e7e7e8;
+	--accent: #231f20;
+	--text: #ededed;
+	--dark-text: #ededed;
+	--ads: #d2bba9;
+	--portbox: #c4c4c4;
+	--portdesc: #444;
+	--white: #fff;
+	--black: #000;
+	/* badges */
+	--nuxt: #00dc82;
+	--vue: #42b883;
+	--bootstrap: #7952b3;
+	--html: #e44f26;
+	/* buttons */
+	--git: #6e5495;
+	--shop: #d2bba9;
+	/* child pages*/
+  }
+
+  @media (prefers-color-scheme: dark) {
+	:root {
+	--filter: grayscale(100%);
+	--background-color: #151314;
+	--accent: #231f20;
+	--text: #ededed;
+	--dark-text: #121212;
+	--ads: #d2bba9;
+	--portbox: #090808;
+	--portdesc: #c4c4c4;
+	--white: #000;
+	--black: #fff;
+	/* badges */
+	--nuxt: #fff;
+	--vue: #fff;
+	--bootstrap: #fff;
+	--html: #fff;
+	/* buttons */
+	--git: #ededed;
+	--shop: #ededed;
+	}
+  }
+
+  [color-scheme=light] {
+	--filter: grayscale(0%);
+	--background-color: #e7e7e8;
+	--accent: #231f20;
+	--text: #ededed;
+	--dark-text: #ededed;
+	--ads: #d2bba9;
+	--portbox: #c4c4c4;
+	--portdesc: #444;
+	--white: #fff;
+	--black: #000;
+	/* badges */
+	--nuxt: #00dc82;
+	--vue: #42b883;
+	--bootstrap: #7952b3;
+	--html: #e44f26;
+	/* buttons */
+	--git: #6e5495;
+	--shop: #d2bba9;
+	/* child pages*/
+  }
+
+  [color-scheme=dark] {
+	--filter: grayscale(100%);
+	---background-color: #151314;
+	--accent: #231f20;
+	--text: #ededed;
+	--dark-text: #121212;
+	--ads: #d2bba9;
+	--portbox: #090808;
+	--portdesc: #c4c4c4;
+	--white: #000;
+	--black: #fff;
+	/* badges */
+	--nuxt: #fff;
+	--vue: #fff;
+	--bootstrap: #fff;
+	--html: #fff;
+	/* buttons */
+	--git: #ededed;
+	--shop: #ededed;
+  }
 
 /* nav styles */
 nav {
-    background-color: #231f20;
+    background-color: var(--accent);
     height: 123px;
     padding-top:50px;
     margin:auto;
@@ -31,14 +121,14 @@ nav {
     
     font-weight: 700;
     text-decoration: none;
-    color: #ededed;
+    color: var(--text);
 }
 
 .desc {
     text-transform:uppercase;
     letter-spacing:0.32em;
     font-size:7px;
-    color: #ededed;
+    color: var(--text);
     padding-left:20px;
     font-weight: 700;
     padding-top:3px;
@@ -55,7 +145,7 @@ nav {
 }
 
 .portf:hover {
-    color: #ededed;
+    color: var(--text);
 }
 
 /* portfolio link anim */
@@ -84,7 +174,7 @@ h1 {
     text-transform:uppercase;
     letter-spacing:0.42em;
     font-size:12px;
-    color: #ededed;
+    color: var(--text);
 }
 
 nav>a {
@@ -92,12 +182,12 @@ nav>a {
     letter-spacing:0.42em;
     font-size:7px;
     font-weight: 700;
-    color: #ededed;
+    color: var(--text);
     text-decoration: none;
 }
 
 .ads {
-    background-color: #d2bba9;
+    background-color: var(--ads);
     width: 970px;
     max-width: 970px;
     height: 90px;
@@ -108,7 +198,7 @@ nav>a {
     font-size: 7px;
     letter-spacing: 0.32em;
     font-weight: 700;
-    color: #ededed;
+    color: var(--text);
 }
 
 .cont {
@@ -128,7 +218,7 @@ nav>a {
     }
 
 .portbox {
-    background-color: #c4c4c4;
+    background-color: var(--portbox);
     padding: 0;
     height: 165px;
     position:relative;
@@ -139,8 +229,8 @@ nav>a {
     top: 7px;
     right: 7px;
     padding:6px;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     font-size: 7px;
     text-transform: uppercase;
     font-weight: 600;
@@ -149,19 +239,19 @@ nav>a {
   }
 
   .new-btn.nuxt {
-    background-color:#00dc82;
+    background-color: var(--nuxt);
 }
 
   .new-btn.vue {
-      background-color:#42b883;
+      background-color: var(--vue);
   }
 
   .new-btn.bootstrap {
-      background-color:#7952b3;
+      background-color: var(--bootstrap);
   }
 
   .new-btn.html {
-    background-color:#e44f26;
+    background-color: var(--html);
 }
 
 .portbox img {
@@ -170,10 +260,12 @@ nav>a {
     object-fit: cover;
     opacity:0.8;
     transition: all 0.5s ease-in-out;
+	filter: var(--filter);
 }
 
 .portbox img:hover {
     opacity: 1;
+	filter: grayscale(0%);
 }
 
 .itemdesc{
@@ -181,7 +273,7 @@ nav>a {
     text-transform: uppercase;
     font-weight: 700;
     transition: all 0.5s ease-in-out;
-    color:#444;
+    color: var(--portdesc);
 }
 
 a > span[class="itemdesc"] {
@@ -199,7 +291,7 @@ a > span[class="itemdesc"] {
 }
 
 button.git {
-    background-color: #6e5495;
+    background-color: var(--git);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.32em;
@@ -208,13 +300,13 @@ button.git {
     box-shadow: none;
     padding: 30px;
     width:49%;
-    color: #ededed;
+    color: var(--dark-text);
     border:0;
 
 }
 
 button.shop {
-    background-color: #d2bba9;
+    background-color: var(--shop);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.32em;
@@ -224,17 +316,18 @@ button.shop {
     padding: 30px;
     width:49%;
     float: right;
-    color: #ededed;
+    color: var(--dark-text);
     border: 0;
 }
 
 button {
     transition: all 0.3s ease-in-out;
 }
-
+/*
 button:hover {
     transform: scale(0.96);
-}
+}*/
+
 .spacer {
     clear: both;
     margin:50px 0;
@@ -242,7 +335,7 @@ button:hover {
 
 div#frm {
     margin:0 auto;
-    border: 1px solid #000;
+    border: 1px solid var(--black);
     width:970px;
     padding:40px;
     margin-bottom:50px;
@@ -251,6 +344,7 @@ div#frm {
 	column-gap:10px;
 	text-transform:uppercase;
 	font-size:10px;
+	color: var(--black);
 }
 
 #frm #mail {
@@ -259,7 +353,7 @@ div#frm {
 
 #frm #mail a {
 	text-decoration:none;
-	color: inherit;
+	color: var(--black);
 }
 
 input[type="email"] {
@@ -280,7 +374,7 @@ input[type="submit"] {
     text-transform: uppercase;
     font-size: 7px;
     font-weight: 700;
-    color:#000;
+    color:var(--black);
     letter-spacing: 0.32em;
     background-color: transparent;
     border:0;
@@ -288,11 +382,17 @@ input[type="submit"] {
 }
 
 footer {
-    background-color: #231f20;
-    height:150px;
-    display:flex;
-    justify-content: center;
+    background-color: var(--accent);
+}
+
+
+footer .footer-container {
+	display:flex;
+    justify-content: space-between;
     align-items: center;
+	max-width: 970px;
+	height:150px;
+	margin: 0 auto;
 }
 
 .copyright {
@@ -300,38 +400,43 @@ footer {
     font-size: 7px;
     letter-spacing: 0.32em;
     text-align: center;
-    color: #ededed;
-    margin-left: 200px;
+    color: var(--text);
 }
 
+/*
 .socials {
     margin-right: 200px;
 }
+*/
 
 .fa {
-    color:#ededed;
+    color:var(--text);
     margin:0 5px;
     font-size:12px;
 }
+
+/* error page styles */
 
 #error404 {
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #231f20;
+    background-color: var(--accent);
 }
 
 #error404 h2 {
     font-size: 100px;
-    color: #ededed;
+    color: var(--text);
 }
 
 #error404 p {
     text-align: center;
     font-size:10px;
-    color:#ededed;
+    color:var(--text);
 }
+
+/* children styles */
 
 .theme-img {
     background-color: gray;
@@ -346,8 +451,8 @@ footer {
 }
 
 .signboards {
-    background-color: #231F20;
-    color: #ededed;
+    background-color: var(--accent);
+    color: var(--text);
     padding:25px;
     font-size:13px;
     letter-spacing: -0.05em;
@@ -400,7 +505,7 @@ footer {
 .codes-aside .highlight-btn {
     background-color:#231F20;
     padding:20px;
-    color:#ededed;
+    color:var(--text);
     width:290px;
     text-align:center;
     font-weight: 500;
@@ -408,7 +513,7 @@ footer {
 }
 
 .codes-aside .options-desc {
-    background-color:#ededed;
+    background-color:var(--text);
     padding:20px;
     color:#231f20;
     width:290px;
