@@ -101,6 +101,10 @@ input[type="submit"] {
 }
 
 footer {
+	padding: 50px 0;
+}
+
+.footer-container {
     flex-direction: column;
 }
 
@@ -108,11 +112,17 @@ footer {
     margin:10px 0;
     padding: 0 20px;
     line-height: 2;
+	order: 2;
 }
 
 .socials {
     margin:0;
     line-height: normal;
+	order: 1;
+}
+
+.theme {
+	order: 3;
 }
 
 .signboards, .theme-img, .codes-aside, .codes {
