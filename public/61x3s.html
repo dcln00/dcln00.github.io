@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Nii Aryeh's Github Portfolio">
+    <meta name="Keywords" content="github, portfolio, frontend, developer, coding, skills, web, webdesign, web design, programmer, design, html, css, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon-01.svg" type="image/x-icon">
+    <!-- og-->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="projects.niiaryeh.me">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.projects.niiaryeh.me/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/dcln00/dcln00.github.io/main/thumbs/projects.niiaryeh.me.png">
+    <meta property="og:description" content="Nii Aryeh's Github Portfolio.">
+    <meta property="og:site_name" content="projects.niiaryeh.me">
+    <meta property="og:image:alt" content="A web developers portfolio.">
+    <!-- tc-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@fkadcln">
+    <meta name="twitter:title" content="projects.niiaryeh.me">
+    <meta name="twitter:description" content="Nii Aryeh's Github Portfolio.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/dcln00/dcln00.github.io/main/thumbs/projects.niiaryeh.me.png">
+    <meta name="twitter:image:alt" content="A web developers portfolio.">
+    <!-- end-->
+    <link rel="stylesheet" href="/assets/dependencies/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/dependencies/hamburgers-master/dist/hamburgers.css">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/mobile.css" type="text/css">
+    <title>projects.niiaryeh.me > 61x3s</title>
+  </head>
+  <body> 
+    <nav>
+      <div class="nav-cont">
+        <h1 class="hdng"><a href="/">projects.niiaryeh.me</a></h1>
+        <p class="desc">Welcome to my github codefolio</p><a class="portf" href="https://www.niiaryeh.me" target="_blank">niiaryeh.me</a>
+        <div class="inner-nav"> <a href="/">home</a><a href="/about">about</a><a href="#frm">contact</a></div>
+        <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+      </div>
+    </nav>
+    <main> 
+      <section>
+        <div class="ads"><a href="https://www.instagram.com/ayvas.dev" target="_blank"><img src="/assets/images/22ayvasad-02.jpg" alt="" width="970" height="90" draggable="false"></a></div>
+      </section>
+      <div class="cont container">
+        <div class="theme-img"><img src="/assets/images/thumbs/thumbnails-07.png" alt="theme image"></div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="signboards">Theme: 61x3s</div>
+          </div>
+          <div class="col-lg-3"><a href="#txt">
+              <div class="signboards">Code</div></a></div>
+          <div class="col-lg-3"><a href="https://61x3s.tumblr.com/" target="_blank">
+              <div class="signboards">Preview</div></a></div>
+        </div>
+        <div class="row"> 
+          <div class="col-lg-5">
+            <div class="codes-aside d-flex justify-content-center align-items-center">
+              <div>
+                <h2>61x3s</h2>
+                <div class="options-desc">
+                  <h2>Options</h2>
+                  <ul>
+                    <li>Supports only text, photo and photoset posts.</li>
+                    <li>Two to five column grid.</li>
+                    <li>Boxed / full width layout.</li>
+                    <li>Photo lightbox.</li>
+                    <li>Black and white filter toggle.</li>
+                    <li>Adjust Header Height</li>
+                    <li>Header background image and gradient overlay.</li>
+                    <li>11 social media links.</li>
+                    <li>Upload Logo Image</li>
+                  </ul>
+                </div>
+                <div class="highlight-btn">Highlight code</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="codes" id="txt">
+				<xmp id='codediv'>
+<!-- Theme 6ix3s by Nii Aryeh -->
+
+<!------------------------------------------------
+DO NOT ALTER STRUCTURE.CSS
+
+2022 NIIARYEH / ALL RIGHTS RESERVED
+README FILE AVAILABLE ON REQUEST
+FEEDBACK IS WELCOME / PROJECTS.NIIARYEH.ME
+------------------------------------------------->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="{Favicon}" />
+	<link rel="apple-touch-icon" sizes="60x60" href="{favicon}">
+	<meta name="theme-color" content="{AccentColor}">
+	
+	{block:Description}
+	<meta name="description" content="{MetaDescription}" />
+	{/block:Description}
+	
+	<meta name="Keywords" content="{text:Blog Keywords}" /> 
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+	
+		{block:indexpage}
+		<meta property="og:title" content="{title}">
+		<meta property="og:site_name" content="{title}"> 
+		{/block:indexpage}
+		{block:PostSummary}
+		<meta property="og:title" content="{title} - {PostSummary}">
+		<meta property="og:site_name" content="{title}"> 
+		<meta name="description" content="{PostSummary}" />
+		{/block:PostSummary}
+		{block:permalinkpage}
+		{block:posts}
+		{block:photo}
+		<meta property="og:image" content="{PhotoURL-Highres}">
+		{/block:photo}
+		{/block:posts}
+		{/block:permalinkpage}
+		{block:indexpage}
+		<meta property="og:image" content="{PortraitURL-128}">
+		{/block:indexpage}
+
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+		crossorigin="anonymous"
+	/>
+	
+	<script src="https://use.fontawesome.com/7e475b8521.js"></script>
+	
+
+	<title>
+		{Title} {block:IndexPage}{block:Description} &ndash;
+		{PlaintextDescription}{/block:Description}{/block:IndexPage}
+		{block:PermalinkPage}{block:PostSummary} &ndash;
+		{PlaintextPostSummary}{/block:PostSummary}{block:PermalinkPage}
+		{block:SearchPage} &ndash; {lang:Search results for
+		SearchQuery}{/block:SearchPage}
+	</title>
+
+	<!-- Options -->
+	<meta name="image:Logo" content="" />
+	<meta name="image:Header Background Image" content="" />
+
+	<meta name="color:Body Background Color" content="#fff"/>
+	<meta name="color:Header Background Color" content="#fff"/>
+	<meta name="color:Header Gradient Color 1" content="#000000cc"/>
+	<meta name="color:Header Gradient Color 2" content="#000000cc"/>
+	<meta name="color:Header Title Color" content="#000"/>
+	<meta name="color:Header Title Hover Color" content="#000"/>
+	<meta name="color:Header Text Color" content="#000"/>
+	<meta name="color:Footer Background Color" content="#fff"/>
+	<meta name="color:Footer Text Color" content="#000"/>
+	<meta name="color:Footer Icon Color" content="#000"/>
+	<meta name="color:Footer Icon Hover Color" content="gray"/>
+	<meta name="color:Header Link Color" content="#000"/>
+	<meta name="color:Header Link Hover Color" content="#000"/>
+	<meta name="color:Lightbox Background Color" content="#000"/>
+	<meta name="color:Link Color" content="#fff"/>
+	<meta name="color:Link Hover Color" content="#fff"/>
+	<meta name="color:Text Color" content="#fff"/>
+
+	<meta name="select:Header Title Size" content="80px" title="Default">
+	<meta name="select:Header Title Size" content="20px" title="20px">
+	<meta name="select:Header Title Size" content="40px" title="40px">
+	<meta name="select:Header Title Size" content="60px" title="60px">
+	<meta name="select:Header Title Size" content="80px" title="80px">
+	<meta name="select:Header Title Size" content="100px" title="100px">
+
+	<meta name="select:Header Font Weight" content="900" title="Default">
+	<meta name="select:Header Font Weight" content="200" title="Thin">
+	<meta name="select:Header Font Weight" content="400" title="Regular">
+	<meta name="select:Header Font Weight" content="900" title="Bold">
+
+	<meta name="select:Header Spacing" content="40vh" title="Default">
+	<meta name="select:Header Spacing" content="50vh" title="Half Height">
+	<meta name="select:Header Spacing" content="100vh" title="Full Height">
+
+	<meta name="select:Post Padding" content="0px" title="Default">
+	<meta name="select:Post Padding" content="2px" title="Thin">
+	<meta name="select:Post Padding" content="6px" title="Medium">
+	<meta name="select:Post Padding" content="12px" title="Large">
+	
+	<meta name="select:Post Height" content="500px" title="Default">
+	<meta name="select:Post Height" content="200px" title="200px">
+	<meta name="select:Post Height" content="250px" title="250px">
+	<meta name="select:Post Height" content="300px" title="300px">
+	<meta name="select:Post Height" content="400px" title="400px">
+
+	<meta name="select:Layout" content="repeat(3, 1fr)" title="3 Column">
+	<meta name="select:Layout" content="repeat(2, 1fr)" title="2 Column">
+	<meta name="select:Layout" content="repeat(4, 1fr)" title="4 Column">
+	<meta name="select:Layout" content="repeat(5, 1fr)" title="5 Column">
+	
+	<meta name="if:Boxed Layout" content="0"/>
+	<meta name="if:Disable Header" content="0"/>
+	<meta name="if:Disable Footer" content="0"/>
+	<meta name="if:Disable Footer Icons" content="0"/>
+	<meta name="if:Enable BW Filter" content="0"/>
+	
+
+	<meta name="text:Custom link 1 URL" content="" />
+	<meta name="text:Custom link 1 title" content="" />
+	<meta name="text:Custom link 2 URL" content="" />
+	<meta name="text:Custom link 2 title" content="" />
+	<meta name="text:Custom link 3 URL" content="" />
+	<meta name="text:Custom link 3 title" content="" />
+	<meta name="text:Custom link 4 URL" content="" />
+	<meta name="text:Custom link 4 title" content="" />
+	<meta name="text:Custom link 5 URL" content="" />
+	<meta name="text:Custom link 5 title" content="" />
+	
+	<meta name="text:Facebook Url" content=""/>
+	<meta name="text:Twitter Username" content=""/>
+	<meta name="text:Instagram Username" content=""/>
+	<meta name="text:Youtube Url" content=""/>
+	<meta name="text:Github Username" content=""/>
+	<meta name="text:Dribbble Url" content=""/>
+	<meta name="text:Behance Url" content=""/>
+	<meta name="text:Reddit Url" content=""/>
+	<meta name="text:Snapchat Url" content=""/>
+	<meta name="text:Spotify Url" content=""/>
+	<meta name="text:SoundCloud Url" content=""/>
+	
+	<meta name="text:Copyright" content=""/>
+	
+	<meta name="text:Blog Keywords" content="">
+
+	<style>
+		/* fonts */
+		@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Montserrat", sans-serif;
+		scroll-behavior: smooth;
+		}
+
+		body,
+		html {
+		overflow-x: hidden;
+		}
+
+		body {
+		background-color: {color:Body Background Color};
+		cursor: url('https://cdn.jsdelivr.net/gh/dcln00/storage/circle.png'), auto !important;
+		}
+
+		::selection {
+		background-color: #000;
+		color: #fff;
+		}
+		
+		a {
+			color: {color:Link Color};
+			text-decoration: none;
+			transition: color .3s;
+		}
+		
+		a:hover {
+			color: {color:Link Hover Color};
+		}
+		
+		p {
+			color: {color:Text Color};
+		}
+
+		header a {
+			text-decoration: none;
+			color: {color:Header Link Color};
+			transition: color .3s;
+		}
+
+		header a:hover {
+			color: {color:Header Link Hover Color};
+		}
+
+		header {
+		height: {select:Header Spacing};
+		background-color: {color:Header Background Color};
+		background-image:linear-gradient({color:Header Gradient Color 1}cc, {color:Header Gradient Color 2}cc), url('{image:Header Background Image}');
+		background-size:cover;
+		background-position:center center;
+		}
+
+		header h1 {
+		text-align: center;
+		font-style: italic;
+		font-weight: {select:Header Font Weight};
+		font-size: {select:Header Title Size};
+		}
+
+		header h1 a {
+		color: {color:Header Title Color};
+		transition: color .3s;
+		}
+
+		header h1 a:hover {
+		color: {color:Header Title Hover Color};
+		}
+
+		header .desc {
+		font-size: 10px;
+		font-weight: 400;
+		margin: 0;
+		text-align: center;
+		color: {color:Header Text Color};
+		}
+		
+		header .header-socials {
+			margin-top:-20px;
+		}
+		
+		header .header-socials li:after {
+			content:'';
+		}
+		
+		main.container-fluid, main.container {
+			padding-left:0;
+			padding-right:0;
+		}
+
+		ul {
+		text-align: center;
+		padding: 5px;
+		}
+
+		li {
+		list-style-type: none;
+		display: inline;
+		font-size: 10px;
+		color: {AccentColor};
+		position: relative;
+		z-index: 3;
+		}
+
+		li:after {
+		content: "+";
+		padding: 0 5px;
+		}
+
+		li:last-child::after {
+		content: "";
+		}
+
+		#post {
+		display: grid;
+		grid-template-columns: {select:Layout};
+		grid-auto-flow: row;
+		grid-gap: {select:Post Padding};
+		}
+		
+		#permv {
+			min-height:{select:Post Height};
+			background-color:#222222;
+		}
+		
+		#permv .title {
+		font-size:12px;
+		text-align:center;
+		}
+		
+		#permv .text-body {
+			color: white !important;
+			font-size:10px;
+			border-left:0;
+			padding-left:0;
+			text-align:center;
+		}
+		
+		#permv .text-body p {
+			width:auto;
+			max-width:500px;
+		}
+
+		.item {
+		max-height: {select:Post Height};
+		overflow: hidden;
+		position:relative;
+		}
+
+		.item figure {
+		width:100%;
+		height: 100%;
+		transition: transform .5s;
+		}
+
+		.item figure:hover {
+		transform: scale(1.1,1.1);
+		}
+		
+
+		.item img {
+		width:100%;
+		height: 100%;
+		object-fit: cover;
+		cursor: url('https://cdn.jsdelivr.net/gh/dcln00/storage/plus-bold.png'), auto !important;
+		{block:IfEnableBWFilter}filter: grayscale(100%);{/block:IfEnableBWFilter}
+		transition: filter 1s;
+		}
+		
+		.item img:hover {
+			filter:grayscale(0%);
+		}
+		
+		.post-text {
+			background-color:#222222;
+			height:{select:Post Height};
+		}
+		
+		.post-text2 {
+			padding:55px 40px;
+		}
+		
+		.post-text .title{
+			font-size:10px;
+		}
+
+		.post-text img{
+			width:95%;
+		}
+		
+		.npf_row figure:hover {
+			transform:scale(1.1,1.1);
+		}
+		
+		.post-text .npf_row {
+			display:flex;
+		}
+		
+		.text-body {
+			color: white !important;
+			font-size:10px;
+			border-left:1px solid white;
+			padding-left:15px;
+		}
+		
+		.text-body p {
+			width:190px;
+		}
+		
+		.post-photoset {
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		
+		{block:IndexPage}
+		#nnn .type-quote {
+			display:none;
+			visibility:hidden;
+		}
+		{/block:IndexPage}
+		
+		
+		#pagen {
+
+		}
+		
+		#pagen li:after {
+			content:'';
+		}
+		
+		footer {
+		background-color: {color:Footer Background Color};
+		color: {color:Footer Text Color};
+		height: 150px;
+	}
+
+	footer > div {
+		font-size: 9px;
+		text-align: center;
+	}
+
+	footer ul {
+		margin-top:10px;
+	}
+
+	footer li:after {
+		content: '';
+	}
+
+	footer a {
+		color: {color:Footer Icon Color};
+		transition:color .5s;
+	}
+
+	footer a:hover {
+		color:{color:Footer Icon Hover Color};
+	}
+
+	footer .copyright, footer .copyright a {
+		font-size: 7px;
+		text-transform: uppercase;
+		color: #6c6c6c8c;
+		text-decoration: none;
+		{block:IfDisableFooterIcons}margin-top:20px;{/block:IfDisableFooterIcons}
+	}
+
+		.fslightbox-slide-number-container {
+		visibility: hidden;
+		}
+		
+		.fslightbox-toolbar-button:nth-child(1) {
+			visibility:hidden;
+		}
+		
+		.fslightbox-toolbar {
+			background:none !important;
+		}
+		
+		/* .fslightbox-container {
+			background: {color:Lightbox Background Color}70 !important;
+		} */
+
+		@media screen and (max-width:468px){
+		#post {
+			grid-template-columns: 1fr;
+		}
+		
+		.crdt {
+			display:none !important;
+		}
+
+	/* .item {
+		max-height: 260px;
+		} */
+		}
+		
+		@media screen and (min-width:469px) and (max-width:1023px) {
+			#post {
+			grid-template-columns: 1fr 1fr;
+		}
+		
+		.crdt {
+			display:none !important;
+		}
+		}
+
+		/* end of style sheets */
+		{CustomCSS}
+		
+		
+		
+	</style>
+	</head>
+	<body>
+	{block:IfNotDisableHeader}<header
+		class="{block:IfNotBoxedLayout}container-fluid{/block:IfNotBoxedLayout}{block:IfBoxedLayout}container{/block:IfBoxedLayout} d-flex justify-content-center align-items-center"
+	>
+		<div>
+		<h1>
+			<a href="/" class='blog-title'>
+			{block:ifnotlogoimage}
+			{title}
+			{/block:ifnotlogoimage}
+			{block:iflogoimage}
+			<img src="{image:logo}">
+			{block:iflogoimage}
+			</a>
+		</h1>
+
+		{block:ShowDescription}
+		{block:Description}
+		<p class="desc">
+			{Description}
+		</p>
+		{block:Description}
+		{/block:ShowDescription}
+
+		<!-- fix stuff here -->
+		<nav>
+			<ul>
+			{block:ifCustomlink1title}
+			<li><a href="{text:Custom link 1 URL}" {target}>
+			{text:Custom link 1 title}
+			</a></li>
+			{/block:ifCustomlink1title}
+			{block:ifCustomlink2title}
+			<li><a href="{text:Custom link 2 URL}" {target}>
+			{text:Custom link 2 title}
+			</a></li>
+			{/block:ifCustomlink2title}
+			{block:ifCustomlink3title}
+			<li><a href="{text:Custom link 3 URL}" {target}>
+			{text:Custom link 3 title}
+			</a></li>
+			{/block:ifCustomlink3title}
+			{block:ifCustomlink4title}
+			<li><a href="{text:Custom link 4 URL}" {target}>
+			{text:Custom link 4 title}
+			</a></li>
+			{/block:ifCustomlink4title}
+			{block:ifCustomlink5title}
+			<li><a href="{text:Custom link 5 URL}" {target}>
+			{text:Custom link 5 title}
+			</a></li>
+			{/block:ifCustomlink5title}
+			{block:HasPages}
+			{block:Pages}
+			<li>
+				<a href="{URL}">{Label}</a>
+			</li>
+			{/block:Pages}
+			{/block:HasPages}
+			</ul>
+		</nav>
+		<ul class='header-socials'>
+				{block:IfFacebookUrl}<li><a href="{text:Facebook Url}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>{/block:IfFacebookUrl}
+					{block:IfTwitterUsername}<li><a href="https://twitter.com/{text:Twitter Username}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>{/block:IfTwitterUsername}
+				{block:IfInstagramUsername}<li><a href="https://www.instagram.com/{text:Instagram Username}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>{/block:IfInstagramUsername}
+				{block:IfYoutubeUrl}<li><a href="{text:Youtube Url}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>{/block:IfYoutubeUrl}
+				{block:IfGithubUsername}<li><a href="https://github.com/{text:Github Username}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>{/block:IfGithubUsername}
+				{block:IfDribbbleUrl}<li><a href="{text:Dribbble Url}" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>{/block:IfDribbbleUrl}
+				{block:IfBehanceUrl}<li><a href="{text:Behance Url}" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>{/block:IfBehanceUrl}
+				{block:IfRedditUrl}<li><a href="{text:Reddit Url}" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>{/block:IfRedditUrl}
+				{block:IfSnapchatUrl}<li><a href="{text:Snapchat Url}" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>{/block:IfSnapchatUrl}
+				{block:IfSpotifyUrl}<li><a href="{text:Spotify Url}" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>{/block:IfSpotifyUrl}
+				{block:IfSoundCloudUrl}<li><a href="{text:SoundCloud Url}" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>{/block:IfSoundCloudUrl}
+				<!-- <li><a href="" target="_blank"></a></li> -->
+			</ul>
+		</div>
+	</header>{/block:IfNotDisableHeader}
+
+	<main class='{block:IfNotBoxedLayout}container-fluid{/block:IfNotBoxedLayout}{block:IfBoxedLayout}container{/block:IfBoxedLayout}'>
+		{block:IndexPage}<section id="post">
+		{block:Posts}
+		<div class="item">
+		<!--not yet available-->
+			<div id='nnn'>
+				{block:Quote}
+				
+				<div class="type-quote post-content">
+					<blockquote>{Quote}</blockquote>
+				
+					{block:Source}
+					<cite class="caption">
+					{Source}
+					</cite>
+					{/block:Source}
+				</div>
+				
+				{/block:Quote}
+				{block:Link}
+				{/block:Link}
+				{block:Chat}
+				{/block:Chat}
+				{block:Audio}
+				{/block:Audio}
+				{block:Video}
+				{/block:Video}
+				{block:Answer}
+				{/block:Answer}
+			</div>
+			<!--Photo-->
+			{block:Photo} 
+			{block:IndexPage}
+			<figure class="type-photo post-content">
+				<a data-fslightbox onclick="{PhotoURL-highRes}"><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" /></a>
+				</figure>
+				{/block:IndexPage}
+			{/block:Photo}
+			<!--Text-->
+			<div class='post-text d-flex justify-content-center align-items-center'>
+			{block:Text}
+			<div class="type-text post-content post-text2">
+				{block:Title}
+				<h2 class="title">
+				<a href="{Permalink}">{Title}</a>
+				</h2>
+				{/block:Title}
+			
+				<div class='text-body'>{Body}</div>
+			</div>
+			{/block:Text}
+			</div>
+			<!--Photoset-->
+			<div class='post-photoset'>
+				{block:Photoset}
+					{block:Photos}
+		<a data-fslightbox onclick="{PhotoURL-highRes}"><img src="{photoURL-1280}"
+			width="100%"height="100%" /></a>
+					{/block:Photos}
+				{/block:Photoset}
+			</div>
+			<!---->
+			<!---->
+		</div>
+		{/block:Posts}
+		</section>{/block:IndexPage}
+		{block:permalinkpage} <section id='permv' class='{block:IfNotBoxedLayout}container-fluid{/block:IfNotBoxedLayout}{block:IfBoxedLayout}container{/block:IfBoxedLayout} d-flex justify-content-center align-items-center'>
+			{block:Posts}
+			<!--text-->
+			{block:Text}
+			<div class="type-text post-content post-text2">
+				{block:Title}
+				<h2 class="title">
+				<a href="{Permalink}">{Title}</a>
+				</h2>
+				{/block:Title}
+			
+				<div class='text-body'>{Body}</div>
+			</div>
+			{/block:Text}
+			<!--Photoset-->
+			{block:Photoset}
+					{block:Photos}
+		<a data-fslightbox href="{PhotoURL-highRes}"><img src="{photoURL-1280}" width="100%"height="100%" /></a>
+					{/block:Photos}
+				{/block:Photoset}
+				<!---->
+			{/block:Posts}    
+		</section>{/block:permalinkpage}
+		{block:IndexPage}<section id='pagen'>
+			{block:Pagination}
+		<ul id="pagination">
+					{block:PreviousPage}
+						<li><a href="{PreviousPage}"></a></li>
+				{/block:PreviousPage}
+				{block:JumpPagination length="5"}
+				{block:CurrentPage}
+						<li><span class="current_page numbersNav"><strong>{PageNumber}</strong></span></li>
+				{/block:CurrentPage}
+				{block:JumpPage}
+						<li><a class="jump_page numbersNav" href="{URL}">{PageNumber}</a></li>
+				{/block:JumpPage}
+				{/block:JumpPagination}
+				{block:NextPage}
+						<li><a id="nextPage" href="{NextPage}"></a></li>
+				{/block:NextPage}
+		</ul>
+{/block:Pagination}
+		</section>{/block:IndexPage}
+	</main>
+	
+	{block:IfNotDisableFooter}<footer class="{block:IfNotBoxedLayout}container-fluid{/block:IfNotBoxedLayout}{block:IfBoxedLayout}container{/block:IfBoxedLayout} d-flex justify-content-center align-items-center">
+		<div>
+			{block:IfCopyright}<div>{text:Copyright}</div>{/block:IfCopyright}
+			{block:IfNotDisableFooterIcons}<ul>
+				{block:IfFacebookUrl}<li><a href="{text:Facebook Url}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>{/block:IfFacebookUrl}
+					{block:IfTwitterUsername}<li><a href="https://twitter.com/{text:Twitter Username}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>{/block:IfTwitterUsername}
+				{block:IfInstagramUsername}<li><a href="https://www.instagram.com/{text:Instagram Username}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>{/block:IfInstagramUsername}
+				{block:IfYoutubeUrl}<li><a href="{text:Youtube Url}" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>{/block:IfYoutubeUrl}
+				{block:IfGithubUsername}<li><a href="https://github.com/{text:Github Username}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>{/block:IfGithubUsername}
+				{block:IfDribbbleUrl}<li><a href="{text:Dribbble Url}" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>{/block:IfDribbbleUrl}
+				{block:IfBehanceUrl}<li><a href="{text:Behance Url}" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></li>{/block:IfBehanceUrl}
+				{block:IfRedditUrl}<li><a href="{text:Reddit Url}" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>{/block:IfRedditUrl}
+				{block:IfSnapchatUrl}<li><a href="{text:Snapchat Url}" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>{/block:IfSnapchatUrl}
+				{block:IfSpotifyUrl}<li><a href="{text:Spotify Url}" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>{/block:IfSpotifyUrl}
+				{block:IfSoundCloudUrl}<li><a href="{text:SoundCloud Url}" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>{/block:IfSoundCloudUrl}
+				<!-- <li><a href="" target="_blank"></a></li> -->
+			</ul>{/block:IfNotDisableFooterIcons}
+			<div class="copyright"><a href="https://projects.niiaryeh.me/" target="_blank">Nii Aryeh</a> x 22 Ayvas</div>
+		</div>
+	</footer>{/block:IfNotDisableFooter}
+	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+	<script src="https://static.tumblr.com/qhv4yti/qBBra9q0a/fslightbox.js"></script>
+
+	<script src="https://static.tumblr.com/qhv4yti/My5rac899/curdot.min.js"></script>
+	
+	<script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		const cursor = curDot({
+		zIndex: 2,
+		diameter:40,
+		borderWidth: 1,
+		borderColor: '#ededed',
+		easing: 5,
+		background: 'transparent'
+		});
+		
+		cursor.over("#post", {
+			scale: 2.5,
+			borderColor: '#ffffff'
+		});
+		
+		cursor.over(".blog-title", {
+			scale: 1.5,
+			borderColor:'transparent',
+			background:'#ededed'
+		});
+		
+		cursor.over("li", {
+			scale: 2,
+			borderColor:'transparent',
+			background:'#282828b8'
+		});
+		
+		let cont = document.querySelector('#post');
+		let infScroll = new InfiniteScroll( cont, {
+			path: '#nextPage',
+			append: '.item',
+			history: false,
+			hideNav: '#pagen',
+		});
+		
+		infScroll.on( 'load', function() {
+	var script = document.createElement('script');
+script.setAttribute('src', 'https://static.tumblr.com/qhv4yti/qBBra9q0a/fslightbox.js');
+var head = document.getElementsByTagName('head')[0];
+head.appendChild(script);
+});
+	</script>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"
+	></script>
+	</body>
+</html>
+					
+										</xmp>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section> 
+        <div class="ads"><a href="https://www.instagram.com/ayvas.dev" target="_blank"><img src="/assets/images/22ayvasad-01.jpg" alt="" width="970" height="90" draggable="false"></a></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="socials"><a href="https://twitter.com/fkadcln" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="https://www.instagram.com/n.aryeh" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://github.com/dcln00/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/nii-aryeh" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="https://www.behance.net/niiaryeh" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a></div><span class="copyright">&copy; Copyright 2022 projects.niiaryeh.me/niiaryeh.me all rights reserved</span>
+        <div class="theme"></div>
+      </div>
+    </footer>
+    <script>
+      let highlightBtn = document.querySelector('.highlight-btn');
+      let codeBlock = document.getElementById('codediv');
+      
+      highlightBtn.addEventListener('click', function() {
+      
+      window.getSelection().selectAllChildren(
+      	codeBlock
+      );
+      })
+    </script>
+    <script src="/assets/scripts/script.js"></script>
+  </body>
+</html>

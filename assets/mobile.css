@@ -4,7 +4,7 @@ html,body {
     overflow-x: hidden;
 }
 
-nav {
+.nav-cont {
     flex-direction:column;
     justify-content: center;
     align-items: center;
@@ -17,13 +17,25 @@ nav {
 }
 
 nav .desc {
-    margin-top:20px;
+    margin-top:10px;
     margin-bottom: 0;
     padding-left:0px;
 }
 
 .portf {
-    margin:5px 0;
+    margin-top:10px;
+	margin-left:0;
+	margin-right:0;
+}
+
+.inner-nav {
+	right:50%;
+	transform: translate(50%, 30%)
+}
+
+.hamburger {
+	margin-top: 20px;
+	margin-bottom: -10px;
 }
 
 .ads {
@@ -125,7 +137,7 @@ footer {
 	order: 3;
 }
 
-.signboards, .theme-img, .codes-aside, .codes {
+.signboards, .theme-img, .codes-aside, .codes, .about-desc, .about-img {
     margin: 0 20px;
 }
 

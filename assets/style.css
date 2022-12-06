@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
     cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;
+	scroll-behavior: smooth;
 }
 
 ::selection {
@@ -110,38 +111,85 @@ body {
 /* nav styles */
 nav {
     background-color: var(--accent);
-    height: 123px;
-    padding-top:50px;
-    margin:auto;
+    padding:40px 0;
+}
+
+nav .nav-cont {
+	margin: 0 auto;
+    max-width:970px;
     display: flex;
     justify-content:center;
+	align-items: center;
+	position:relative;
+}
+
+.hdng {
+    text-transform:uppercase;
+    letter-spacing:0.42em;
+    font-size:12px;
+    color: var(--text);
+	margin-bottom: 0;
 }
 
 .hdng > a {
-    
     font-weight: 700;
     text-decoration: none;
     color: var(--text);
+	margin-bottom: 0px;
 }
 
 .desc {
+	margin-bottom: 0px;
     text-transform:uppercase;
     letter-spacing:0.32em;
     font-size:7px;
     color: var(--text);
     padding-left:20px;
     font-weight: 700;
-    padding-top:3px;
-    line-height: normal;
+    /* padding-top:3px; */
+    /* line-height: normal; */
+}
+
+.inner-nav {
+	display: flex;
+	column-gap: 20px;
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	right: 40px;
+	z-index: 20;
+}
+
+.inner-nav a {
+	text-decoration: none;
+	text-transform:uppercase;
+    letter-spacing:0.42em;
+    font-size:7px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.inner-nav.is-active {
+	opacity: 1;
 }
 
 .portf {
-    padding-top:3px;
-    margin-left:25%;
-    margin-bottom:55px;
     display: inline-block;
     position: relative;
     line-height: normal;
+	margin-left: auto;
+	text-decoration: none;
+	text-transform:uppercase;
+    letter-spacing:0.42em;
+    font-size:7px;
+    font-weight: 700;
+    color: var(--text);
+	transition: all .5s;
+	z-index:10;
+}
+
+.portf.is-active {
+	opacity: 0;
 }
 
 .portf:hover {
@@ -153,11 +201,11 @@ nav {
   .portf:after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 99%;
     transform: scaleX(0);
     height: 1px;
-    bottom: 0;
-    left: 0;
+    bottom: -10px;
+    left: -1px;
     background-color: #ededed;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -170,19 +218,26 @@ nav {
 
 /*end of portfolio link anim */
 
-h1 {
-    text-transform:uppercase;
-    letter-spacing:0.42em;
-    font-size:12px;
-    color: var(--text);
+.hamburger {
+	padding: 0;
+	transform: scale(.4,.4);
 }
 
-nav>a {
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+	background-color: #ededed;
+	height: 3px;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+	background-color: #ededed;
+}
+
+nav > a {
     text-transform:uppercase;
     letter-spacing:0.42em;
     font-size:7px;
     font-weight: 700;
-    color: var(--text);
+    color: var(--text) !important;
     text-decoration: none;
 }
 
@@ -438,6 +493,8 @@ footer .footer-container {
 
 /* children styles */
 
+/* 6ix3s */
+
 .theme-img {
     background-color: gray;
     overflow: hidden;
@@ -529,4 +586,34 @@ footer .footer-container {
     font-size:12px;
     letter-spacing: -0.546px;
 
+}
+
+/* about */
+
+#about {
+	margin-top: 50px;
+}
+
+#about .about-desc {
+	background-color: var(--accent);
+    color: var(--text);
+    padding:25px;
+    font-size:13px;
+    letter-spacing: -0.05em;
+	min-height:400px;
+}
+
+#about .about-desc .signature {
+	margin-top: 30px;
+}
+
+#about .about-img {
+	height:400px;
+	overflow: hidden;
+}
+
+#about .about-img img {
+	width: 100%;
+	height:100%;
+	object-fit: cover;
 }

@@ -1,4 +1,13 @@
-let themeBtn = document.querySelector('.theme');
+let themeBtn = document.querySelector('.theme')
+let menuBtn = document.querySelector('.hamburger')
+let portf = document.querySelector('.portf')
+let innernav = document.querySelector('.inner-nav')
+
+	menuBtn.addEventListener('click', function () {
+		menuBtn.classList.toggle('is-active')
+		portf.classList.toggle('is-active')
+		innernav.classList.toggle('is-active')
+	})
 
 
 	function getMode() {
