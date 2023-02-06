@@ -33,6 +33,11 @@ nav .desc {
 
 .featured-desc {
 	margin-top: 0px;
+	height: auto;
+}
+
+.featured-desc .title, .featured-desc .heading {
+	padding-bottom: 10px;
 }
 
 .portf {

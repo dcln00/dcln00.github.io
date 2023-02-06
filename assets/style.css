@@ -308,6 +308,10 @@ nav > a {
 	box-shadow: none;
 }
 
+.featured-desc a button {
+	color: #231f20;
+}
+
 .ads {
     background-color: var(--ads);
     width: 970px;
