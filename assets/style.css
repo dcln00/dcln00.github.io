@@ -243,6 +243,71 @@ nav > a {
     text-decoration: none;
 }
 
+.featured-box {
+	width: 100%;
+	height: 200px;
+	margin-top: 50px;
+	overflow: hidden
+}
+
+.featured-image {
+	padding-right: 20px;
+}
+
+.featured-img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.featured-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1,1);
+	transition: .5s;
+}
+
+.featured-img img:hover {
+	transform: scale(1.1,1.1)
+}
+
+.featured {
+	display: flex;
+}
+
+.featured-desc .title {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: var(--portdesc);
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+
+.featured-desc .heading {
+	text-transform: capitalize;
+	font-size: 35px;
+	color: var(--ads);
+	font-weight: 700;
+	padding-bottom: 5px;
+	letter-spacing: -0.04em;
+}
+
+.featured-desc .descf {
+	font-size: 14px;
+	color: var(--portdesc);
+	font-weight: 400;
+	padding-bottom: 15px;
+	letter-spacing: -0.04em;
+}
+
+.featured-desc button {
+	padding: 10px 20px;
+	border-radius: 0;
+	border: none;
+	background-color: var(--ads);
+	box-shadow: none;
+}
+
 .ads {
     background-color: var(--ads);
     width: 970px;
@@ -258,7 +323,7 @@ nav > a {
     color: var(--text);
 }
 
-.cont {
+.cont, .contain {
     margin: 0 auto;
     width:970px;
     margin-bottom:50px;
